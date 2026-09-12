@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinterCODE.pl - Sezon 1 | Boty DC i Strony WWW</title>
+    <title>WinterCODE.pl - Sezon 1</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -25,9 +25,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 80px;
-            background: rgba(11, 15, 14, 0.8);
-            backdrop-filter: blur(10px);
+            padding: 18px 60px;
+            background: rgba(11, 15, 14, 0.85);
+            backdrop-filter: blur(12px);
             position: fixed;
             width: 100%;
             top: 0;
@@ -53,8 +53,9 @@
 
         .nav-links {
             display: flex;
-            gap: 30px;
+            gap: 25px;
             list-style: none;
+            align-items: center;
         }
 
         .nav-links a {
@@ -69,21 +70,47 @@
             color: #3bb6fc;
         }
 
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
         .discord-btn-nav {
-            background: rgba(59, 182, 252, 0.1);
-            color: #3bb6fc;
-            border: 1px solid rgba(59, 182, 252, 0.3);
-            padding: 10px 20px;
-            border-radius: 8px;
+            background: linear-gradient(135deg, #818cf8 0%, #6366f1 100%);
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
             transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
         }
 
         .discord-btn-nav:hover {
-            background: #3bb6fc;
-            color: #0b0f0e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+        }
+
+        /* Language Switcher Button */
+        .lang-switch {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .lang-switch:hover {
+            background: rgba(255, 255, 255, 0.1);
         }
 
         /* Hero Section */
@@ -260,10 +287,6 @@
             margin-bottom: 20px;
         }
 
-        .service-card.soon i {
-            color: #777;
-        }
-
         .service-card h3 {
             font-size: 1.3rem;
             font-weight: 700;
@@ -322,7 +345,7 @@
 
         /* Stats Section */
         .stats-section {
-            padding: 80px 80px 120px 80px;
+            padding: 80px 80px 100px 80px;
             max-width: 1400px;
             margin: 0 auto;
             text-align: center;
@@ -362,6 +385,106 @@
             font-weight: 500;
         }
 
+        /* Footer */
+        footer {
+            background: rgba(8, 11, 10, 0.95);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 60px 80px 30px 80px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-brand-col img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .footer-brand-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .footer-brand-col p {
+            color: #888;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-col ul a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul a:hover {
+            color: #3bb6fc;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-icon-btn {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-icon-btn:hover {
+            background: #3bb6fc;
+            color: #0b0f0e;
+            border-color: #3bb6fc;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 30px auto 0 auto;
+            text-align: center;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
         @media (max-width: 968px) {
             header {
                 flex-direction: column;
@@ -369,7 +492,7 @@
                 padding-top: 120px;
                 gap: 50px;
             }
-            .services-grid, .testimonials-grid {
+            .services-grid, .testimonials-grid, .footer-content {
                 grid-template-columns: 1fr;
             }
             .nav-links {
@@ -390,25 +513,30 @@
             WinterCODE.pl
         </a>
         <ul class="nav-links">
-            <li><a href="#" class="active">Strona Główna</a></li>
-            <li><a href="#uslugi">Oferta</a></li>
-            <li><a href="#opinie">Opinie</a></li>
-            <li><a href="#statystyki">Statystyki</a></li>
+            <li><a href="#" class="active" data-i18n="nav_home">Strona główna</a></li>
+            <li><a href="#uslugi" data-i18n="nav_services">Oferta</a></li>
+            <li><a href="#opinie" data-i18n="nav_reviews">Opinie</a></li>
+            <li><a href="#statystyki" data-i18n="nav_stats">Statystyki</a></li>
         </ul>
-        <a href="https://discord.gg/FzXGy372z" target="_blank" class="discord-btn-nav"><i class="fab fa-discord"></i> Dołącz na Discord</a>
+        <div class="nav-actions">
+            <button class="lang-switch" onclick="toggleLanguage()">
+                <span id="lang-flag">🇵🇱</span> <span id="lang-text">PL</span>
+            </button>
+            <a href="https://discord.gg/FzXGy372z" target="_blank" class="discord-btn-nav" data-i18n="nav_discord">Dołącz na Discord</a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
     <header>
         <div class="hero-content">
             <div class="hero-tag">
-                <i class="fa-solid fa-fire"></i> Sezon 1 – WinterCODE.pl
+                <i class="fa-solid fa-fire"></i> <span data-i18n="hero_tag">Sezon 1 – WinterCODE.pl</span>
             </div>
-            <h1>Tworzymy Przyszłość<br><span>Twojego Serwera</span></h1>
-            <p>Profesjonalne boty Discord oraz nowoczesne strony WWW. Najwyższa jakość wykonania w świetnej cenie!</p>
+            <h1 data-i18n-html="hero_title">Tworzymy Przyszłość<br><span>Twojego Serwera</span></h1>
+            <p data-i18n="hero_desc">Profesjonalne boty Discord oraz nowoczesne strony WWW. Najwyższa jakość wykonania w świetnej cenie!</p>
             <div class="hero-buttons">
-                <a href="https://discord.gg/FzXGy372z" target="_blank" class="btn-primary">Dołącz na Discord</a>
-                <a href="#uslugi" class="btn-secondary">Nasza Oferta</a>
+                <a href="https://discord.gg/FzXGy372z" target="_blank" class="btn-primary" data-i18n="btn_discord">Dołącz na Discord</a>
+                <a href="#uslugi" class="btn-secondary" data-i18n="btn_offer">Nasza Oferta</a>
             </div>
         </div>
         <div class="hero-image">
@@ -418,64 +546,64 @@
 
     <!-- Services Section -->
     <section class="services-section" id="uslugi">
-        <h2 class="section-title">Nasza Oferta</h2>
-        <p class="section-subtitle">Sprawdź co jest aktualnie otwarte w Sezonie 1</p>
+        <h2 class="section-title" data-i18n="services_title">Nasza Oferta</h2>
+        <p class="section-subtitle" data-i18n="services_subtitle">Sprawdź co jest aktualnie otwarte w Sezonie 1</p>
         
         <div class="services-grid">
             <!-- Boty DC (Open) -->
             <div class="service-card active-service">
-                <span class="service-badge badge-open">OTWARTE</span>
+                <span class="service-badge badge-open" data-i18n="badge_open">OTWARTE</span>
                 <i class="fa-brands fa-discord"></i>
-                <h3>Boty Discord</h3>
-                <p>Zaawansowane boty integracyjne, systemy weryfikacji, tickety i moderacja dla Twojej społeczności.</p>
+                <h3 data-i18n="srv_discord_title">Boty Discord</h3>
+                <p data-i18n="srv_discord_desc">Zaawansowane boty integracyjne, systemy weryfikacji, tickety i moderacja dla Twojej społeczności.</p>
             </div>
 
             <!-- Strony WWW (Open) -->
             <div class="service-card active-service">
-                <span class="service-badge badge-open">OTWARTE</span>
+                <span class="service-badge badge-open" data-i18n="badge_open">OTWARTE</span>
                 <i class="fa-solid fa-globe"></i>
-                <h3>Strony WWW</h3>
-                <p>Nowoczesne strony internetowe, panele oraz sklepy dostosowane pod Twoje wymagania.</p>
+                <h3 data-i18n="srv_web_title">Strony WWW</h3>
+                <p data-i18n="srv_web_desc">Nowoczesne strony internetowe, panele oraz sklepy dostosowane pod Twoje wymagania.</p>
             </div>
 
             <!-- Grafika (Soon) -->
             <div class="service-card">
-                <span class="service-badge badge-soon">Niedługo...</span>
+                <span class="service-badge badge-soon" data-i18n="badge_soon">Niedługo...</span>
                 <i class="fa-solid fa-paintbrush"></i>
-                <h3>Grafika</h3>
-                <p>Profesjonalne grafiki użytkowe, banery promocyjne i oprawy wizualne.</p>
+                <h3 data-i18n="srv_gfx_title">Grafika</h3>
+                <p data-i18n="srv_gfx_desc">Profesjonalne grafiki użytkowe, banery promocyjne i oprawy wizualne.</p>
             </div>
 
             <!-- Pluginy (Soon) -->
             <div class="service-card">
-                <span class="service-badge badge-soon">Niedługo...</span>
+                <span class="service-badge badge-soon" data-i18n="badge_soon">Niedługo...</span>
                 <i class="fa-solid fa-plug"></i>
-                <h3>Pluginy</h3>
-                <p>Autorskie pluginy Spigot/Paper/Velocity zoptymalizowane pod wysoką wydajność.</p>
+                <h3 data-i18n="srv_plugins_title">Pluginy</h3>
+                <p data-i18n="srv_plugins_desc">Autorskie pluginy Spigot/Paper/Velocity zoptymalizowane pod wysoką wydajność.</p>
             </div>
 
             <!-- Skrypty (Soon) -->
             <div class="service-card">
-                <span class="service-badge badge-soon">Niedługo...</span>
+                <span class="service-badge badge-soon" data-i18n="badge_soon">Niedługo...</span>
                 <i class="fa-solid fa-code"></i>
-                <h3>Skrypty</h3>
-                <p>Lekkie i funkcjonalne skrypty rozbudowujące możliwości rozgrywki.</p>
+                <h3 data-i18n="srv_scripts_title">Skrypty</h3>
+                <p data-i18n="srv_scripts_desc">Lekkie i funkcjonalne skrypty rozbudowujące możliwości rozgrywki.</p>
             </div>
 
             <!-- Mapy / Paczki (Soon) -->
             <div class="service-card">
-                <span class="service-badge badge-soon">Niedługo...</span>
+                <span class="service-badge badge-soon" data-i18n="badge_soon">Niedługo...</span>
                 <i class="fa-solid fa-map"></i>
-                <h3>Mapy i Paczki</h3>
-                <p>Gotowe paczki trybów oraz unikalne mapy serwerowe.</p>
+                <h3 data-i18n="srv_maps_title">Mapy i Paczki</h3>
+                <p data-i18n="srv_maps_desc">Gotowe paczki trybów oraz unikalne mapy serwerowe.</p>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials-section" id="opinie">
-        <h2 class="section-title">Zaufali Nam</h2>
-        <p class="section-subtitle">Opinie twórców serwerów o naszych usługach</p>
+        <h2 class="section-title" data-i18n="reviews_title">Zaufali Nam</h2>
+        <p class="section-subtitle" data-i18n="reviews_subtitle">Opinie twórców serwerów o naszych usługach</p>
 
         <div class="testimonials-grid">
             <div class="testimonial-card">
@@ -483,7 +611,7 @@
                     <div class="stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">Mega fajne pluginy dobre wykonanie i co najważniejsze że tanio jest stosunek do klienta jest dobry</p>
+                    <p class="testimonial-text" data-i18n="review_1">"Mega fajne pluginy dobre wykonanie i co najważniejsze że tanio jest stosunek do klienta jest dobry"</p>
                 </div>
                 <div class="testimonial-author">— Klient WinterCODE</div>
             </div>
@@ -493,7 +621,7 @@
                     <div class="stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="testimonial-text">“Świetna jakość pluginów i paczek, dobre podejście do klienta oraz szybka realizacja zamówień. Mogę polecić każdemu WinterCODE.pl kto szuka dobrych rozwiązań dla swojego serwera Minecraft.”</p>
+                    <p class="testimonial-text" data-i18n="review_2">“Świetna jakość pluginów i paczek, dobre podejście do klienta oraz szybka realizacja zamówień. Mogę polecić każdemu WinterCODE.pl kto szuka dobrych rozwiązań dla swojego serwera Minecraft.”</p>
                 </div>
                 <div class="testimonial-author">— Klient WinterCODE</div>
             </div>
@@ -502,21 +630,174 @@
 
     <!-- Statistics Section -->
     <section class="stats-section" id="statystyki">
-        <h2 class="section-title" style="margin-bottom: 10px;">Statystyki</h2>
-        <p class="section-subtitle">Sprawdzone i zweryfikowane statystyki</p>
+        <h2 class="section-title" style="margin-bottom: 10px;" data-i18n="stats_title">Statystyki</h2>
+        <p class="section-subtitle" data-i18n="stats_subtitle">Sprawdzone i zweryfikowane statystyki</p>
         <div class="stats-grid">
             <div class="stat-card">
                 <i class="fa-solid fa-shield-check"></i>
                 <div class="stat-number">1</div>
-                <div class="stat-label">Legitchecki</div>
+                <div class="stat-label" data-i18n="stat_legit">Legitchecki</div>
             </div>
             <div class="stat-card">
                 <i class="fa-solid fa-users"></i>
                 <div class="stat-number">25</div>
-                <div class="stat-label">Osób na Discordzie</div>
+                <div class="stat-label" data-i18n="stat_users">Osób na Discordzie</div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand-col">
+                <div class="footer-brand-title">
+                    <img src="https://i.imgur.com/VRsnL5G.png" alt="WinterCODE Logo">
+                    WinterCODE.pl
+                </div>
+                <p data-i18n="footer_desc">Profesjonalne rozwiązania dla serwerów i społeczności. Sezon 1.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_links_title">SZYBKIE LINKI</h4>
+                <ul>
+                    <li><a href="#" data-i18n="nav_home">Strona główna</a></li>
+                    <li><a href="#uslugi" data-i18n="nav_services">Oferta</a></li>
+                    <li><a href="#opinie" data-i18n="nav_reviews">Opinie</a></li>
+                    <li><a href="#statystyki" data-i18n="nav_stats">Statystyki</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_legal_title">INFORMACJE PRAWNE</h4>
+                <ul>
+                    <li><a href="#" data-i18n="footer_terms">Regulamin</a></li>
+                    <li><a href="#" data-i18n="footer_privacy">Polityka prywatności</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footer_social_title">DOŁĄCZ DO SPOŁECZNOŚCI</h4>
+                <div class="social-icons">
+                    <a href="https://discord.gg/FzXGy372z" target="_blank" class="social-icon-btn"><i class="fab fa-discord"></i></a>
+                    <a href="#" target="_blank" class="social-icon-btn"><i class="fab fa-youtube"></i></a>
+                    <a href="#" target="_blank" class="social-icon-btn"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 WinterCODE.pl. <span data-i18n="footer_rights">Wszystkie prawa zastrzeżone.</span>
+        </div>
+    </footer>
+
+    <script>
+        const translations = {
+            pl: {
+                nav_home: "Strona główna",
+                nav_services: "Oferta",
+                nav_reviews: "Opinie",
+                nav_stats: "Statystyki",
+                nav_discord: "Dołącz na Discord",
+                hero_tag: "Sezon 1 – WinterCODE.pl",
+                hero_title: "Tworzymy Przyszłość<br><span>Twojego Serwera</span>",
+                hero_desc: "Profesjonalne boty Discord oraz nowoczesne strony WWW. Najwyższa jakość wykonania w świetnej cenie!",
+                btn_discord: "Dołącz na Discord",
+                btn_offer: "Nasza Oferta",
+                services_title: "Nasza Oferta",
+                services_subtitle: "Sprawdź co jest aktualnie otwarte w Sezonie 1",
+                badge_open: "OTWARTE",
+                badge_soon: "Niedługo...",
+                srv_discord_title: "Boty Discord",
+                srv_discord_desc: "Zaawansowane boty integracyjne, systemy weryfikacji, tickety i moderacja dla Twojej społeczności.",
+                srv_web_title: "Strony WWW",
+                srv_web_desc: "Nowoczesne strony internetowe, panele oraz sklepy dostosowane pod Twoje wymagania.",
+                srv_gfx_title: "Grafika",
+                srv_gfx_desc: "Profesjonalne grafiki użytkowe, banery promocyjne i oprawy wizualne.",
+                srv_plugins_title: "Pluginy",
+                srv_plugins_desc: "Autorskie pluginy Spigot/Paper/Velocity zoptymalizowane pod wysoką wydajność.",
+                srv_scripts_title: "Skrypty",
+                srv_scripts_desc: "Lekkie i funkcjonalne skrypty rozbudowujące możliwości rozgrywki.",
+                srv_maps_title: "Mapy i Paczki",
+                srv_maps_desc: "Gotowe paczki trybów oraz unikalne mapy serwerowe.",
+                reviews_title: "Zaufali Nam",
+                reviews_subtitle: "Opinie twórców serwerów o naszych usługach",
+                review_1: "Mega fajne pluginy dobre wykonanie i co najważniejsze że tanio jest stosunek do klienta jest dobry",
+                review_2: "“Świetna jakość pluginów i paczek, dobre podejście do klienta oraz szybka realizacja zamówień. Mogę polecić każdemu WinterCODE.pl kto szuka dobrych rozwiązań dla swojego serwera Minecraft.”",
+                stats_title: "Statystyki",
+                stats_subtitle: "Sprawdzone i zweryfikowane statystyki",
+                stat_legit: "Legitchecki",
+                stat_users: "Osób na Discordzie",
+                footer_desc: "Profesjonalne rozwiązania dla serwerów i społeczności. Sezon 1.",
+                footer_links_title: "SZYBKIE LINKI",
+                footer_legal_title: "INFORMACJE PRAWNE",
+                footer_terms: "Regulamin",
+                footer_privacy: "Polityka prywatności",
+                footer_social_title: "DOŁĄCZ DO SPOŁECZNOŚCI",
+                footer_rights: "Wszystkie prawa zastrzeżone."
+            },
+            en: {
+                nav_home: "Home",
+                nav_services: "Offer",
+                nav_reviews: "Reviews",
+                nav_stats: "Stats",
+                nav_discord: "Join Discord",
+                hero_tag: "Season 1 – WinterCODE.pl",
+                hero_title: "Shaping the Future<br><span>Of Your Server</span>",
+                hero_desc: "Professional Discord bots and modern websites. Premium quality at a great price!",
+                btn_discord: "Join Discord",
+                btn_offer: "Our Offer",
+                services_title: "Our Services",
+                services_subtitle: "Check what is currently open in Season 1",
+                badge_open: "OPEN",
+                badge_soon: "Coming Soon...",
+                srv_discord_title: "Discord Bots",
+                srv_discord_desc: "Advanced integration bots, verification systems, ticket systems, and moderation for your community.",
+                srv_web_title: "Websites",
+                srv_web_desc: "Modern websites, web panels, and stores tailored to your specific requirements.",
+                srv_gfx_title: "Graphics",
+                srv_gfx_desc: "Professional utility graphics, promotional banners, and visual asset packages.",
+                srv_plugins_title: "Plugins",
+                srv_plugins_desc: "Custom Spigot/Paper/Velocity plugins optimized for peak server performance.",
+                srv_scripts_title: "Scripts",
+                srv_scripts_desc: "Lightweight and functional scripts to expand gameplay capabilities.",
+                srv_maps_title: "Maps & Setups",
+                srv_maps_desc: "Ready-to-use server setups and unique custom map builds.",
+                reviews_title: "Trusted By",
+                reviews_subtitle: "Server owners' feedback about our services",
+                review_1: "Super cool plugins, great quality, and most importantly affordable with amazing customer support!",
+                review_2: "\"Great quality of plugins and setups, good customer approach, and fast order fulfillment. I can recommend WinterCODE.pl to anyone looking for good solutions for their Minecraft server.\"",
+                stats_title: "Statistics",
+                stats_subtitle: "Checked and verified statistics",
+                stat_legit: "Legit Checks",
+                stat_users: "Discord Members",
+                footer_desc: "Professional solutions for servers and communities. Season 1.",
+                footer_links_title: "QUICK LINKS",
+                footer_legal_title: "LEGAL INFORMATION",
+                footer_terms: "Terms of Service",
+                footer_privacy: "Privacy Policy",
+                footer_social_title: "JOIN COMMUNITY",
+                footer_rights: "All rights reserved."
+            }
+        };
+
+        let currentLang = 'pl';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'pl' ? 'en' : 'pl';
+            
+            document.getElementById('lang-flag').innerText = currentLang === 'pl' ? '🇵🇱' : '🇬🇧';
+            document.getElementById('lang-text').innerText = currentLang.toUpperCase();
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.innerText = translations[currentLang][key];
+                }
+            });
+
+            document.querySelectorAll('[data-i18n-html]').forEach(el => {
+                const key = el.getAttribute('data-i18n-html');
+                if (translations[currentLang][key]) {
+                    el.innerHTML = translations[currentLang][key];
+                }
+            });
+        }
+    </script>
 </body>
 </html>
