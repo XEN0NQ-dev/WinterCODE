@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WinterCODE – Elitarny Software & Rozwiązania dla Serwerów</title>
+    <title>WinterCODE.pl – Profesjonalne Rozwiązania dla Serwerów Minecraft</title>
     
-    <link rel="icon" type="image/png" href="https://imgur.com/urSgbzj.png">
-    <meta name="description" content="WinterCODE - najwyższej jakości autorskie pluginy, skrypty, boty Discord, strony internetowe i grafiki dla profesjonalnych projektów Minecraft.">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/VRsnL5G.png">
+    <meta name="description" content="WinterCODE.pl - najwyższej jakości autorskie pluginy, paczki i rozwiązania dla serwerów Minecraft.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,12 @@
 
     <style>
         :root {
-            --bg-deep: #05070c;
-            --bg-card: rgba(12, 17, 29, 0.75);
-            --border-glow: rgba(34, 197, 94, 0.2);
+            --bg-deep: #030705;
+            --bg-card: rgba(8, 20, 13, 0.75);
+            --border-glow: rgba(34, 197, 94, 0.22);
             --border-hover: rgba(34, 197, 94, 0.6);
             --accent: #22c55e;
-            --accent-glow: rgba(34, 197, 94, 0.25);
+            --accent-glow: rgba(34, 197, 94, 0.3);
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
         }
@@ -37,8 +37,8 @@
             color: var(--text-main);
             overflow-x: hidden;
             background-image: 
-                radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.12) 0%, transparent 50%),
-                radial-gradient(circle at 10% 40%, rgba(16, 185, 129, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 50% 0%, rgba(34, 197, 94, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 10% 40%, rgba(16, 185, 129, 0.06) 0%, transparent 40%),
                 linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
             background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px;
@@ -62,7 +62,7 @@
             width: 90%;
             max-width: 1300px;
             margin: 25px auto;
-            background: rgba(8, 12, 20, 0.85);
+            background: rgba(5, 15, 10, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--border-glow);
@@ -71,7 +71,7 @@
             position: sticky;
             top: 20px;
             z-index: 1000;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
         }
 
         .logo-area {
@@ -83,9 +83,9 @@
         }
 
         .logo-img {
-            height: 42px;
+            height: 44px;
             width: auto;
-            border-radius: 50%;
+            border-radius: 10px;
             box-shadow: 0 0 15px var(--accent-glow);
         }
 
@@ -149,9 +149,9 @@
             align-items: center;
             width: 90%;
             max-width: 1300px;
-            margin: 80px auto 140px auto;
+            margin: 70px auto 130px auto;
             gap: 50px;
-            min-height: 65vh;
+            min-height: 60vh;
         }
 
         .hero-badge {
@@ -170,7 +170,7 @@
         }
 
         .hero-text h1 {
-            font-size: 3.5rem;
+            font-size: 3.4rem;
             font-weight: 800;
             margin-bottom: 20px;
             line-height: 1.1;
@@ -247,8 +247,8 @@
 
         .hero-glow {
             position: absolute;
-            width: 300px;
-            height: 300px;
+            width: 320px;
+            height: 320px;
             background: radial-gradient(circle, rgba(34, 197, 94, 0.25) 0%, transparent 70%);
             z-index: -1;
             filter: blur(40px);
@@ -258,47 +258,48 @@
             text-align: center;
             animation: float 5s ease-in-out infinite;
             width: 100%;
-            max-width: 360px;
+            max-width: 380px;
         }
 
         .hero-card-float img {
             width: 100%;
-            max-width: 300px;
+            max-width: 280px;
             height: auto;
             object-fit: contain;
-            filter: drop-shadow(0 0 30px rgba(34, 197, 94, 0.4));
+            filter: drop-shadow(0 0 35px rgba(34, 197, 94, 0.45));
+            border-radius: 20px;
         }
 
         /* Sections General */
         section {
             width: 90%;
             max-width: 1300px;
-            margin: 140px auto;
+            margin: 130px auto;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 60px;
         }
 
         .section-header h2 {
-            font-size: 2.8rem;
+            font-size: 2.7rem;
             font-weight: 800;
             letter-spacing: -1px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .section-header p {
             color: var(--text-muted);
-            font-size: 1.15rem;
+            font-size: 1.1rem;
         }
 
         /* Stats Grid */
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             gap: 30px;
-            max-width: 700px;
+            max-width: 400px;
             margin: 0 auto;
         }
 
@@ -309,8 +310,6 @@
             padding: 40px;
             border-radius: 20px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
             transition: all 0.3s ease;
         }
 
@@ -321,7 +320,7 @@
         }
 
         .stat-number {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: 800;
             color: var(--accent);
             margin-bottom: 10px;
@@ -330,7 +329,7 @@
 
         .stat-label {
             color: var(--text-muted);
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             font-weight: 600;
         }
 
@@ -383,29 +382,11 @@
             z-index: 1;
         }
 
-        /* Reviews Slider */
-        .reviews-wrapper {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-        }
-
-        .reviews-track {
-            display: flex;
+        /* Reviews Grid */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
-            width: max-content;
-            animation: scrollReviews 40s linear infinite;
-        }
-
-        .reviews-track:hover {
-            animation-play-state: paused;
-        }
-
-        @keyframes scrollReviews {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
         }
 
         .review-card {
@@ -414,16 +395,15 @@
             border: 1px solid var(--border-glow);
             padding: 35px;
             border-radius: 20px;
-            width: 420px;
-            flex-shrink: 0;
             display: flex;
             flex-direction: column;
             gap: 20px;
-            transition: border-color 0.3s ease;
+            transition: border-color 0.3s ease, transform 0.3s ease;
         }
 
         .review-card:hover {
             border-color: var(--border-hover);
+            transform: translateY(-5px);
         }
 
         .review-header {
@@ -433,13 +413,12 @@
         }
 
         .review-avatar {
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             object-fit: cover;
             border: 2px solid var(--accent);
             background: rgba(34, 197, 94, 0.1);
-            padding: 4px;
         }
 
         .review-author h4 {
@@ -456,16 +435,16 @@
 
         .review-card p {
             color: var(--text-muted);
-            font-size: 1rem;
+            font-size: 1.02rem;
             line-height: 1.6;
         }
 
         /* Team Grid */
         .team-container {
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
@@ -502,7 +481,7 @@
             padding: 16px 20px;
             border-radius: 12px;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1.05rem;
             transition: all 0.3s ease;
             text-align: center;
         }
@@ -510,97 +489,6 @@
         .team-member-box:hover {
             border-color: var(--accent);
             background: rgba(34, 197, 94, 0.05);
-            transform: translateX(4px);
-        }
-
-        /* Client Panel View */
-        .client-panel-container {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 60px;
-            max-width: 1100px;
-            margin: 80px auto;
-            background: var(--bg-card);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-glow);
-            border-radius: 28px;
-            padding: 60px;
-            align-items: center;
-            box-shadow: 0 40px 80px rgba(0,0,0,0.6);
-        }
-
-        .client-panel-left h2 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-            line-height: 1.1;
-        }
-
-        .client-panel-left p {
-            color: var(--text-muted);
-            font-size: 1.15rem;
-            line-height: 1.7;
-        }
-
-        .client-panel-right {
-            background: rgba(8, 12, 20, 0.8);
-            border: 1px solid var(--border-glow);
-            border-radius: 20px;
-            padding: 45px 35px;
-            text-align: center;
-        }
-
-        .client-panel-right h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        .client-panel-right p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 30px;
-            line-height: 1.5;
-        }
-
-        .btn-discord-login {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 14px;
-            width: 100%;
-            background: #5865F2;
-            color: #ffffff;
-            border: none;
-            padding: 16px;
-            border-radius: 14px;
-            font-weight: 700;
-            font-size: 1.05rem;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            text-decoration: none;
-            box-shadow: 0 10px 30px rgba(88, 101, 242, 0.4);
-            margin-bottom: 25px;
-        }
-
-        .btn-discord-login:hover {
-            background: #4752c4;
-            transform: translateY(-2px);
-            box-shadow: 0 15px 35px rgba(88, 101, 242, 0.6);
-        }
-
-        .client-panel-footer-link {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.3s;
-            cursor: pointer;
-        }
-
-        .client-panel-footer-link:hover {
-            color: var(--accent);
         }
 
         /* Subpages & Portfolio */
@@ -677,42 +565,11 @@
             text-align: center;
             color: var(--text-muted);
             padding: 80px 20px;
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+            font-size: 1.4rem;
+            font-weight: 600;
             background: rgba(0,0,0,0.2);
             border-radius: 20px;
             border: 1px dashed rgba(255,255,255,0.08);
-        }
-
-        .graphics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .graphic-item {
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1px solid var(--border-glow);
-            background: rgba(0,0,0,0.3);
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .graphic-item:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent);
-        }
-
-        .graphic-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .graphic-item:hover img {
-            transform: scale(1.04);
         }
 
         /* Footer */
@@ -721,14 +578,14 @@
             padding: 60px 0;
             color: var(--text-muted);
             border-top: 1px solid rgba(255, 255, 255, 0.05);
-            margin-top: 140px;
+            margin-top: 130px;
             font-size: 0.95rem;
         }
 
         /* Animations */
         @keyframes float {
             0% { transform: translateY(0px); }
-            50% { transform: translateY(-12px); }
+            50% { transform: translateY(-10px); }
             100% { transform: translateY(0px); }
         }
 
@@ -738,18 +595,15 @@
         }
 
         @media (max-width: 900px) {
-            .hero, .client-panel-container, .team-container {
+            .hero, .team-container {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
             .hero-text h1 {
-                font-size: 2.5rem;
+                font-size: 2.4rem;
             }
             .nav-links {
                 display: none;
-            }
-            .client-panel-container {
-                padding: 35px 20px;
             }
             .subpage-box {
                 padding: 30px 20px;
@@ -763,8 +617,8 @@
     <div id="view-home" class="site-view active">
         <nav>
             <a onclick="switchView('home')" class="logo-area">
-                <img src="https://imgur.com/urSgbzj.png" alt="WinterCODE Logo" class="logo-img">
-                <span class="logo-text">Winter<span>CODE</span></span>
+                <img src="https://i.imgur.com/VRsnL5G.png" alt="WinterCODE Logo" class="logo-img">
+                <span class="logo-text">Winter<span>CODE.pl</span></span>
             </a>
             <ul class="nav-links">
                 <li><a onclick="switchView('home')">Strona Główna</a></li>
@@ -773,23 +627,23 @@
                 <li><a href="#opinie">Opinie</a></li>
                 <li><a href="#zespol">Zespół</a></li>
             </ul>
-            <a onclick="switchView('panel')" class="client-panel-btn">Panel Klienta</a>
+            <a href="https://discord.gg/TWÓJ_LINK_DISCORD" target="_blank" class="client-panel-btn">Panel Klienta (Discord)</a>
         </nav>
 
         <section class="hero">
             <div class="hero-text">
                 <div class="hero-badge">⚡ Elitarne Rozwiązania dla Serwerów</div>
-                <h1>WinterCODE<br><span>Profesjonalne projekty webowe!</span></h1>
-                <p>Zaufaj nam i stwórz z swymi nowymi aplikacje oraz strony internetowe dopasowane do Twoich potrzeb.</p>
+                <h1>WinterCODE.pl<br><span>Najlepsze pluginy i skrypty!</span></h1>
+                <p>Profesjonalne podejście, szybka realizacja oraz niezawodne systemy i paczki stworzone specjalnie pod Twój serwer Minecraft.</p>
                 <div class="hero-buttons">
-                    <a onclick="switchView('panel')" class="btn-primary">Złóż zamówienie</a>
-                    <a href="#oferty" class="btn-secondary">Zobacz ofertę</a>
+                    <a href="https://discord.gg/TWÓJ_LINK_DISCORD" target="_blank" class="btn-primary">Dołącz na Discord</a>
+                    <a href="#oferty" class="btn-secondary">Sprawdź ofertę</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="hero-glow"></div>
                 <div class="hero-card-float">
-                    <img src="https://imgur.com/urSgbzj.png" alt="WinterCODE Logo">
+                    <img src="https://i.imgur.com/VRsnL5G.png" alt="WinterCODE Logo">
                 </div>
             </div>
         </section>
@@ -797,16 +651,12 @@
         <section id="statystyki">
             <div class="section-header">
                 <h2>Statystyki</h2>
-                <p>Zaufanie budowane liczbami i jakością</p>
+                <p>Sprawdzone i zweryfikowane usługi</p>
             </div>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">50</div>
-                    <div class="stat-label">Legitchecków</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">25</div>
-                    <div class="stat-label">Członków na Discordzie</div>
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Legitcheck</div>
                 </div>
             </div>
         </section>
@@ -814,7 +664,7 @@
         <section id="oferty">
             <div class="section-header">
                 <h2>Nasze Usługi</h2>
-                <p>Wybierz kategorię i sprawdź realizacje naszego zespołu</p>
+                <p>Wybierz kategorię, aby sprawdzić szczegóły</p>
             </div>
             <div class="offers-grid">
                 <div class="offer-card" onclick="openSubpage('skrypty')">
@@ -838,51 +688,28 @@
         <section id="opinie">
             <div class="section-header">
                 <h2>Opinie Klientów</h2>
-                <p>Sprawdź, co mówią osoby, które nam zaufały</p>
+                <p>Co mówią osoby, które skorzystały z naszych usług</p>
             </div>
-            <div class="reviews-wrapper">
-                <div class="reviews-track">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="https://imgur.com/urSgbzj.png" alt="Avatar" class="review-avatar">
-                            <div class="review-author">
-                                <h4>Klient WinterCODE</h4>
-                                <span>Zweryfikowany Klient</span>
-                            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.imgur.com/VRsnL5G.png" alt="Avatar" class="review-avatar">
+                        <div class="review-author">
+                            <h4>Klient WinterCODE</h4>
+                            <span>Zweryfikowana Opinia</span>
                         </div>
-                        <p>“Legit Serwer Idealny najlepszy Code Zakupiłem Bota / poprawki serwerowe / promocja serwera na 14dni”</p>
                     </div>
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="https://imgur.com/urSgbzj.png" alt="Avatar" class="review-avatar">
-                            <div class="review-author">
-                                <h4>Klient WinterCODE</h4>
-                                <span>Zweryfikowany Klient</span>
-                            </div>
+                    <p>“Mega fajne pluginy dobre wykonanie i co najważniejsze że tanio jest stosunek do klienta jest dobry”</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.imgur.com/VRsnL5G.png" alt="Avatar" class="review-avatar">
+                        <div class="review-author">
+                            <h4>Klient WinterCODE</h4>
+                            <span>Zweryfikowana Opinia</span>
                         </div>
-                        <p>“Witam to znow ja Kupiłem Na WinterCODE Bota Na discord Rekrutacja, ticket, weryfikacja. Propsy dla ekipy!”</p>
                     </div>
-                    <!-- Płynny duplikat dla zapętlenia karuzeli -->
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="https://imgur.com/urSgbzj.png" alt="Avatar" class="review-avatar">
-                            <div class="review-author">
-                                <h4>Klient WinterCODE</h4>
-                                <span>Zweryfikowany Klient</span>
-                            </div>
-                        </div>
-                        <p>“Legit Serwer Idealny najlepszy Code Zakupiłem Bota / poprawki serwerowe / promocja serwera na 14dni”</p>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-header">
-                            <img src="https://imgur.com/urSgbzj.png" alt="Avatar" class="review-avatar">
-                            <div class="review-author">
-                                <h4>Klient WinterCODE</h4>
-                                <span>Zweryfikowany Klient</span>
-                            </div>
-                        </div>
-                        <p>“Witam to znow ja Kupiłem Na WinterCODE Bota Na discord Rekrutacja, ticket, weryfikacja. Propsy dla ekipy!”</p>
-                    </div>
+                    <p>“Świetna jakość pluginów i paczek, dobre podejście do klienta oraz szybka realizacja zamówień. Mogę polecić każdemu WinterCODE.pl kto szuka dobrych rozwiązań dla swojego serwera Minecraft.”</p>
                 </div>
             </div>
         </section>
@@ -890,19 +717,19 @@
         <section id="zespol">
             <div class="section-header">
                 <h2>Nasz Zespół</h2>
-                <p>Ludzie z pasją tworzący zaawansowane projekty</p>
+                <p>Osoby zarządzające i tworzące projekty</p>
             </div>
             <div class="team-container">
                 <div class="team-category">
                     <div class="team-category-title">CEO</div>
                     <div class="team-members-list">
+                        <div class="team-member-box">Oklapek</div>
                         <div class="team-member-box">XEN0NQ</div>
                     </div>
                 </div>
                 <div class="team-category">
                     <div class="team-category-title">JavaDev</div>
                     <div class="team-members-list">
-                        <div class="team-member-box">Oklapek</div>
                         <div class="team-member-box">Velzo</div>
                     </div>
                 </div>
@@ -910,38 +737,7 @@
         </section>
 
         <footer>
-            <p>&copy; 2026 WinterCODE. Wszelkie prawa zastrzeżone.</p>
-        </footer>
-    </div>
-
-    <!-- PANEL KLIENTA -->
-    <div id="view-panel" class="site-view">
-        <nav>
-            <a onclick="switchView('home')" class="logo-area">
-                <img src="https://imgur.com/urSgbzj.png" alt="WinterCODE Logo" class="logo-img">
-                <span class="logo-text">Winter<span>CODE</span></span>
-            </a>
-            <a onclick="switchView('home')" class="client-panel-btn">← Strona Główna</a>
-        </nav>
-
-        <div class="client-panel-container">
-            <div class="client-panel-left">
-                <h2>Panel Klienta<br>WinterCODE</h2>
-                <p>Zarządzaj swoimi zamówieniami, śledź postępy realizacji projektów i uzyskaj bezpośredni dostęp do systemów wsparcia.</p>
-            </div>
-            <div class="client-panel-right">
-                <h3>Autoryzacja Discord</h3>
-                <p>Zaloguj się kontem Discord, aby bezpiecznie zarządzać swoimi usługami.</p>
-                <a href="https://discord.com/oauth2/authorize?client_id=1545435093269487626&response_type=code&redirect_uri=https%3A%2F%2Fxen0nq-dev.github.io%2FWINTERCODE&scope=identify+email" target="_blank" class="btn-discord-login">
-                    <svg viewBox="0 0 127.14 96.36" width="20" height="20" fill="#ffffff"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.19-16.15c2.65-27.28-4.43-51.1-20.62-72.1M42.45,65.69C36.18,65.69,31,60,31,53s5.18-12.72,11.45-12.72S53.9,46,53.9,53,48.72,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.2,60,73.2,53s5.18-12.72,11.45-12.72S96.1,46,96.1,53,90.93,65.69,84.69,65.69Z"/></svg>
-                    Zaloguj przez Discord
-                </a>
-                <a onclick="switchView('home')" class="client-panel-footer-link">Wróć do strony głównej</a>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2026 WinterCODE. Wszelkie prawa zastrzeżone.</p>
+            <p>&copy; 2026 WinterCODE.pl. Wszelkie prawa zastrzeżone.</p>
         </footer>
     </div>
 
@@ -953,7 +749,7 @@
                 <h2>Skrypty</h2>
                 <div class="author-tag">Twórca: <span>WinterCODE Team</span></div>
             </div>
-            <div class="empty-portfolio">Niedługo...</div>
+            <div class="empty-portfolio">Sekcja w przygotowaniu...</div>
         </div>
     </div>
 
@@ -963,9 +759,9 @@
             <button class="back-btn" onclick="closeSubpages()"><span>←</span> Powrót</button>
             <div class="subpage-header-flex">
                 <h2>Pluginy</h2>
-                <div class="author-tag">Twórca: <span>WinterCODE Team</span></div>
+                <div class="author-tag">Twórca: <span>Velzo / WinterCODE</span></div>
             </div>
-            <div class="empty-portfolio">Niedługo...</div>
+            <div class="empty-portfolio">Sekcja w przygotowaniu...</div>
         </div>
     </div>
 
@@ -975,15 +771,9 @@
             <button class="back-btn" onclick="closeSubpages()"><span>←</span> Powrót</button>
             <div class="subpage-header-flex">
                 <h2>Grafiki</h2>
-                <div class="author-tag">Twórca: <span>XEN0NQ</span></div>
+                <div class="author-tag">Twórca: <span>WinterCODE Team</span></div>
             </div>
-            <div class="graphics-grid">
-                <div class="graphic-item"><img src="https://imgur.com/7GbVwxB.png" alt="Grafika 1"></div>
-                <div class="graphic-item"><img src="https://imgur.com/opnw7Ku.png" alt="Grafika 2"></div>
-                <div class="graphic-item"><img src="https://imgur.com/2CiTkRn.png" alt="Grafika 3"></div>
-                <div class="graphic-item"><img src="https://imgur.com/8dUYxbs.png" alt="Grafika 4"></div>
-                <div class="graphic-item"><img src="https://imgur.com/29Vp29w.png" alt="Grafika 5"></div>
-            </div>
+            <div class="empty-portfolio">Sekcja w przygotowaniu...</div>
         </div>
     </div>
 
@@ -995,7 +785,7 @@
                 <h2>Boty Discord</h2>
                 <div class="author-tag">Twórca: <span>WinterCODE Team</span></div>
             </div>
-            <div class="empty-portfolio">Niedługo...</div>
+            <div class="empty-portfolio">Sekcja w przygotowaniu...</div>
         </div>
     </div>
 
@@ -1007,7 +797,7 @@
                 <h2>Strony WWW</h2>
                 <div class="author-tag">Twórca: <span>WinterCODE Team</span></div>
             </div>
-            <div class="empty-portfolio">Niedługo...</div>
+            <div class="empty-portfolio">Sekcja w przygotowaniu...</div>
         </div>
     </div>
 
@@ -1018,8 +808,6 @@
             
             if(viewName === 'home') {
                 document.getElementById('view-home').classList.add('active');
-            } else if(viewName === 'panel') {
-                document.getElementById('view-panel').classList.add('active');
             }
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
