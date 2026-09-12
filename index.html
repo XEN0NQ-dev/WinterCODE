@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WINTERCODE - Sezon 1</title>
-    <!-- Favicon z logo -->
     <link rel="icon" type="image/png" href="https://i.imgur.com/VRsnL5G.png">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,7 +21,6 @@
             overflow-x: hidden;
         }
 
-        /* Ekran ładowania (intro) */
         #intro-screen {
             position: fixed;
             top: 0;
@@ -110,7 +108,6 @@
             visibility: hidden !important;
         }
 
-        /* Navbar */
         nav {
             display: flex;
             justify-content: space-between;
@@ -183,7 +180,6 @@
             box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
         }
 
-        /* Language Switcher Button */
         .lang-switch {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -214,7 +210,6 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
 
-        /* Hero Section */
         header {
             min-height: 100vh;
             display: flex;
@@ -316,7 +311,6 @@
             50% { transform: translateY(-10px); }
         }
 
-        /* Services Section */
         .services-section {
             padding: 80px;
             max-width: 1400px;
@@ -400,7 +394,6 @@
             line-height: 1.5;
         }
 
-        /* Testimonials Section */
         .testimonials-section {
             padding: 80px;
             max-width: 1400px;
@@ -444,7 +437,6 @@
             font-size: 0.95rem;
         }
 
-        /* Stats Section */
         .stats-section {
             padding: 80px 80px 100px 80px;
             max-width: 1400px;
@@ -486,7 +478,6 @@
             font-weight: 500;
         }
 
-        /* Footer */
         footer {
             background: rgba(8, 11, 10, 0.95);
             border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -607,7 +598,6 @@
 </head>
 <body>
 
-    <!-- Ekran startowy (intro) z animacją -->
     <div id="intro-screen">
         <div class="intro-content">
             <div class="intro-logo">WINTER<span>CODE</span></div>
@@ -618,7 +608,6 @@
         </div>
     </div>
 
-    <!-- Navbar -->
     <nav>
         <a href="#" class="nav-brand">
             <img src="https://i.imgur.com/VRsnL5G.png" alt="WINTERCODE Logo">
@@ -639,7 +628,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header>
         <div class="hero-content">
             <div class="hero-tag">
@@ -657,13 +645,11 @@
         </div>
     </header>
 
-    <!-- Services Section -->
     <section class="services-section" id="uslugi">
         <h2 class="section-title" data-i18n="services_title">Nasza Oferta</h2>
         <p class="section-subtitle" data-i18n="services_subtitle">Sprawdź co jest aktualnie otwarte w Sezonie 1</p>
         
         <div class="services-grid">
-            <!-- Boty DC (Open) -->
             <div class="service-card active-service">
                 <span class="service-badge badge-open" data-i18n="badge_open">OTWARTE</span>
                 <i class="fa-brands fa-discord"></i>
@@ -671,7 +657,6 @@
                 <p data-i18n="srv_discord_desc">Zaawansowane boty integracyjne, systemy weryfikacji, tickety i moderacja dla Twojej społeczności.</p>
             </div>
 
-            <!-- Strony WWW (Open) -->
             <div class="service-card active-service">
                 <span class="service-badge badge-open" data-i18n="badge_open">OTWARTE</span>
                 <i class="fa-solid fa-globe"></i>
@@ -679,7 +664,6 @@
                 <p data-i18n="srv_web_desc">Nowoczesne strony internetowe, panele oraz sklepy dostosowane pod Twoje wymagania.</p>
             </div>
 
-            <!-- Grafika (Soon) -->
             <div class="service-card">
                 <span class="service-badge badge-soon" data-i18n="badge_soon">Niedługo...</span>
                 <i class="fa-solid fa-paintbrush"></i>
@@ -687,7 +671,6 @@
                 <p data-i18n="srv_gfx_desc">Profesjonalne grafiki użytkowe, banery promocyjne i oprawy wizualne.</p>
             </div>
 
-            <!-- Pluginy (Soon) -->
             <div class="service-card">
                 <span class="service-badge badge-soon" data-i18n="badge_soon">Niedługo...</span>
                 <i class="fa-solid fa-plug"></i>
@@ -695,7 +678,6 @@
                 <p data-i18n="srv_plugins_desc">Autorskie pluginy Spigot/Paper/Velocity zoptymalizowane pod wysoką wydajność.</p>
             </div>
 
-            <!-- Skrypty (Soon) -->
             <div class="service-card">
                 <span class="service-badge badge-soon" data-i18n="badge_soon">Niedługo...</span>
                 <i class="fa-solid fa-code"></i>
@@ -703,7 +685,6 @@
                 <p data-i18n="srv_scripts_desc">Lekkie i funkcjonalne skrypty rozbudowujące możliwości rozgrywki.</p>
             </div>
 
-            <!-- Mapy / Paczki (Soon) -->
             <div class="service-card">
                 <span class="service-badge badge-soon" data-i18n="badge_soon">Niedługo...</span>
                 <i class="fa-solid fa-map"></i>
@@ -713,7 +694,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="testimonials-section" id="opinie">
         <h2 class="section-title" data-i18n="reviews_title">Zaufali Nam</h2>
         <p class="section-subtitle" data-i18n="reviews_subtitle">Opinie twórców serwerów o naszych usługach</p>
@@ -741,7 +721,6 @@
         </div>
     </section>
 
-    <!-- Statistics Section -->
     <section class="stats-section" id="statystyki">
         <h2 class="section-title" style="margin-bottom: 10px;" data-i18n="stats_title">Statystyki</h2>
         <p class="section-subtitle" data-i18n="stats_subtitle">Sprawdzone i zweryfikowane statystyki</p>
@@ -759,7 +738,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-brand-col">
@@ -800,7 +778,6 @@
     </footer>
 
     <script>
-        // Skrypt obsługujący ekran ładowania (intro)
         window.addEventListener('load', () => {
             const introScreen = document.getElementById('intro-screen');
 
@@ -809,7 +786,6 @@
             }, 3200);
         });
 
-        // Tłumaczenia i obsługa języków
         const translations = {
             pl: {
                 nav_home: "Strona główna",
@@ -904,7 +880,6 @@
         function toggleLanguage() {
             currentLang = currentLang === 'pl' ? 'en' : 'pl';
             
-            // Zmiana linku do odpowiedniej flagi oraz napisu na przycisku
             const flagEl = document.getElementById('lang-flag');
             if (currentLang === 'pl') {
                 flagEl.src = 'https://imgur.com/apzAGSu.png';
