@@ -206,8 +206,12 @@
         }
 
         .lang-flag {
-            font-size: 1.1rem;
-            line-height: 1;
+            width: 24px;
+            height: 16px;
+            object-fit: cover;
+            border-radius: 2px;
+            display: inline-block;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
         }
 
         /* Hero Section */
@@ -628,7 +632,8 @@
         </ul>
         <div class="nav-actions">
             <button class="lang-switch" onclick="toggleLanguage()">
-                <span class="lang-flag" id="lang-flag">🇵🇱</span> <span id="lang-text">PL</span>
+                <img src="https://imgur.com/apzAGSu.png" alt="Flaga Polski" class="lang-flag" id="lang-flag"> 
+                <span id="lang-text">PL</span>
             </button>
             <a href="https://discord.gg/FzXGy372z" target="_blank" class="discord-btn-nav" data-i18n="nav_discord">Dołącz na Discord</a>
         </div>
@@ -834,7 +839,7 @@
                 srv_maps_title: "Mapy i Paczki",
                 srv_maps_desc: "Gotowe paczki trybów oraz unikalne mapy serwerowe.",
                 reviews_title: "Zaufali Nam",
-                reviews_subtitle: "Opinie twórców serwerów o naszym serwisie",
+                reviews_subtitle: "Opinie twórców serwerów o naszych usługach",
                 review_1: "Mega fajne pluginy dobre wykonanie i co najważniejsze że tanio jest stosunek do klienta jest dobry",
                 review_2: "“Świetna jakość pluginów i paczek, dobre podejście do klienta oraz szybka realizacja zamówień. Mogę polecić każdemu WINTERCODE kto szuka dobrych rozwiązań dla swojego serwera Minecraft.”",
                 stats_title: "Statystyki",
@@ -867,7 +872,6 @@
                 srv_discord_title: "Discord Bots",
                 srv_discord_desc: "Advanced integration bots, verification systems, ticket systems, and moderation for your community.",
                 srv_web_title: "Websites",
-                srv_web_titles: "Websites",
                 srv_web_desc: "Modern websites, web panels, and stores tailored to your specific requirements.",
                 srv_gfx_title: "Graphics",
                 srv_gfx_desc: "Professional utility graphics, promotional banners, and visual asset packages.",
@@ -900,8 +904,16 @@
         function toggleLanguage() {
             currentLang = currentLang === 'pl' ? 'en' : 'pl';
             
-            // Zmiana flagi oraz napisu na przycisku
-            document.getElementById('lang-flag').innerText = currentLang === 'pl' ? '🇵🇱' : '🇬🇧';
+            // Zmiana linku do odpowiedniej flagi oraz napisu na przycisku
+            const flagEl = document.getElementById('lang-flag');
+            if (currentLang === 'pl') {
+                flagEl.src = 'https://imgur.com/apzAGSu.png';
+                flagEl.alt = 'Flaga Polski';
+            } else {
+                flagEl.src = 'https://imgur.com/43aYwFR.png';
+                flagEl.alt = 'Flaga Anglii';
+            }
+            
             document.getElementById('lang-text').innerText = currentLang.toUpperCase();
 
             document.querySelectorAll('[data-i18n]').forEach(el => {
