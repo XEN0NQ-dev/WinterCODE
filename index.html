@@ -188,19 +188,26 @@
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: #fff;
-            padding: 8px 14px;
+            padding: 8px 16px;
             border-radius: 50px;
             cursor: pointer;
             display: flex;
             align-items: center;
             gap: 8px;
-            font-weight: 600;
-            font-size: 0.85rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
             transition: all 0.3s;
         }
 
         .lang-switch:hover {
             background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .lang-flag {
+            font-size: 1.1rem;
+            line-height: 1;
         }
 
         /* Hero Section */
@@ -621,7 +628,7 @@
         </ul>
         <div class="nav-actions">
             <button class="lang-switch" onclick="toggleLanguage()">
-                <span id="lang-flag">🇵🇱</span> <span id="lang-text">PL</span>
+                <span class="lang-flag" id="lang-flag">🇵🇱</span> <span id="lang-text">PL</span>
             </button>
             <a href="https://discord.gg/FzXGy372z" target="_blank" class="discord-btn-nav" data-i18n="nav_discord">Dołącz na Discord</a>
         </div>
@@ -827,7 +834,7 @@
                 srv_maps_title: "Mapy i Paczki",
                 srv_maps_desc: "Gotowe paczki trybów oraz unikalne mapy serwerowe.",
                 reviews_title: "Zaufali Nam",
-                reviews_subtitle: "Opinie twórców serwerów o naszych usługach",
+                reviews_subtitle: "Opinie twórców serwerów o naszym serwisie",
                 review_1: "Mega fajne pluginy dobre wykonanie i co najważniejsze że tanio jest stosunek do klienta jest dobry",
                 review_2: "“Świetna jakość pluginów i paczek, dobre podejście do klienta oraz szybka realizacja zamówień. Mogę polecić każdemu WINTERCODE kto szuka dobrych rozwiązań dla swojego serwera Minecraft.”",
                 stats_title: "Statystyki",
@@ -860,6 +867,7 @@
                 srv_discord_title: "Discord Bots",
                 srv_discord_desc: "Advanced integration bots, verification systems, ticket systems, and moderation for your community.",
                 srv_web_title: "Websites",
+                srv_web_titles: "Websites",
                 srv_web_desc: "Modern websites, web panels, and stores tailored to your specific requirements.",
                 srv_gfx_title: "Graphics",
                 srv_gfx_desc: "Professional utility graphics, promotional banners, and visual asset packages.",
@@ -877,7 +885,7 @@
                 stats_subtitle: "Checked and verified statistics",
                 stat_legit: "Legit Checks",
                 stat_users: "Discord Members",
-                footer_disc: "Professional solutions for servers and communities. Season 1.",
+                footer_desc: "Professional solutions for servers and communities. Season 1.",
                 footer_links_title: "QUICK LINKS",
                 footer_legal_title: "LEGAL INFORMATION",
                 footer_terms: "Terms of Service",
@@ -892,6 +900,7 @@
         function toggleLanguage() {
             currentLang = currentLang === 'pl' ? 'en' : 'pl';
             
+            // Zmiana flagi oraz napisu na przycisku
             document.getElementById('lang-flag').innerText = currentLang === 'pl' ? '🇵🇱' : '🇬🇧';
             document.getElementById('lang-text').innerText = currentLang.toUpperCase();
 
